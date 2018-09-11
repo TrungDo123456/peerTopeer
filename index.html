@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>TrungDo WebRTC</title>
+        <script src="jquery.js"></script>
+        <script src="peer.js"></script>
+        <script src="socket.io.js"></script>
+    </head>
+    <body>
+        <div id="chat">
+            <p>User Online</p>
+            <ul id="list_user"></ul>
+            <h3 id="id_peer">Your ID:</h3>
+            <h6>ME</h6>
+            <video id="localStream" width="300" controls></video>
+            <br /><br />
+            <h6>Customer</h6>
+            <video id="remoteStream" width="300" controls></video>
+            <br /><br />
+            <input type="text" placeholder="Id RemoteStream" id="txtIdRemoteStream"/>
+            <br/>
+            <button id="btnCall">Call</button>
+            <br/>
+        </div>
+        <div id="register">
+            <input type="text" placeholder="username" id="txtUsername"/>
+            <br/>
+            <button id="btnSignUp"> Sign Up</button>
+        </div>
+
+    </body>
+    <script src="main.js"></script>
+</html>
